@@ -54,8 +54,10 @@ void ReadPersonData2(string& name, unsigned short& age, unsigned short& height, 
 	ReadPersonWeight(weight);
 }
 
-int main() {
-	string name;
+#ifndef DO_NOT_DEFINE_MAIN
+int main()
+{
+string name;
 	unsigned short age = 0;
 	double salary = 0;
 	unsigned short height = 200;
@@ -68,3 +70,4 @@ int main() {
 	WritePersonData(name, to_string(weight), to_string(height), &age, 5000);
 	return 0;
 }
+#endif
