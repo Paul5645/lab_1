@@ -10,6 +10,6 @@ unsigned short ReadPersonHeight();
 void ReadPersonWeight(unsigned short& weight);
 void ReadPersonSalary(double* salary);
 void WritePersonData(const string& name, const string& weight, const string& height, const unsigned short* age, const double salary);
-void ReadPersonData1(string& name, unsigned short& age, double& salary);
-void ReadPersonData2(string& name, unsigned short& age, unsigned short& height, unsigned short& weight);
+void ReadPersonData(string& name, unsigned short& age, double& salary);
+void ReadPersonData(string& name, unsigned short& age, unsigned short& height, unsigned short& weight);
 int main();
